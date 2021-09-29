@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d1e222b5b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mycss.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> 
+</head>
+<body>
+    <header class="nav-bar">
+        <h1 class="nav-title1">Studio 8</h1>
+        <div class="nav-title0">
+        <p class="nav-title"> HOME</p>
+        <p class="nav-title"> PROJECTS</p>
+        <p class="nav-title"> PAGES</p>
+        <p class="nav-title"> BLOG</p>
+        <p class="nav-title"> SHOP</p>
+        <p class="nav-title"> CONTACT</p>
+        <i class="fab fa-facebook-messenger nav-icon" title="messenger"></i>
+        <i class="fab fa-behance nav-icon" title="behance"></i>
+        <i class="fab fa-twitter nav-icon" title="twitter"></i>
+        <i class="fas fa-search nav-icon" title="search"></i>
+        </div>
+    </header>
+    <div class="intro-img">
+    <p class="intro-title">NATIONAL GEOGRAPHIC</p>
+    <h2 class="intro-title-1">CREATIVE DIRECTION</h2>
+    <i class="fas fa-chevron-down intro-icon"></i>
+    </div>
+    <div class="title1">
+        <p class="title1-1">National Geographic</p>
+        <h2 class="title1-2">Imagination is more important than knowledge.
+            For knowledge is limited, whereas imagination embraces the entire world,
+            stimulating progress, giving birth to evolution.</h2>
+    </div>
+    <div class="box">
+        <div class="box1">
+            <img id="myImg" src="placeholder_1920x1080-3.jpg" class="img-boxing">
+            <img id="myImg" src="placeholder_1920x1080-3.jpg" class="img-boxing">
+            <img id="myImg" src="placeholder_1920x1080-3.jpg" class="img-boxing">
+            <img id="myImg" src="placeholder_1920x1080-3.jpg" class="img-boxing">
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+          </div>
+    </div>
+    <script>
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+        modal.style.display = "block";
+         modalImg.src = this.src;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+        modal.style.display = "none";
+        }
+    </script>
+    <div class="btn-div">
+        <span class="btn"> LUANCH WEBSITE</span>
+    </div>
+    <footer class="foot">
+        <section class="foot-divs">
+            <div class="foot-icon0">
+                <i class="fab fa-facebook-messenger foot-icon" title="messenger"></i>
+                <i class="fab fa-behance foot-icon" title="behance"></i>
+                <i class="fab fa-twitter foot-icon" title="twitter"></i>
+            </div>
+            <div class="foot-title0">
+                <p class="foot-title"> About</p>
+                <p class="foot-title"> Terms & Conditions</p>
+                <p class="foot-title"> Buy Me</p>
+                <p class="foot-title"> Contact</p>
+            </div>
+            <div class="foot-end">
+                <p class="end">Handcrafted by <i class="far fa-copyright"></i></p>
+                <p class="end-word">  WPlook Studio.</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
